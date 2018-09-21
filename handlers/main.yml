@@ -30,9 +30,7 @@
 
 # set this as a handler for idempotency, @see https://github.com/ansible/ansible-modules-core/issues/875
 # which I think still hasn't been fixed (at least on 2.6 I'm using)
-- name: Ensure solr is started and enabled on boot if configured.
+- name: Ensure solr is enabled on boot if configured.
   service:
     name: "{{ solr_service_name }}"
-    state: "{{ solr_service_state }}"
     enabled: true
-  when: solr_service_manage

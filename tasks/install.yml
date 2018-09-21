@@ -19,7 +19,7 @@
   notify:
     - Ensure solr is stopped (RHEL 7 workaround).
     - Run systemd daemon_reload (RHEL 7 workaround).
-    - Ensure solr is started and enabled on boot if configured.
+    - Ensure solr is enabled on boot if configured.
 
 - name: Flush Handlers.
   meta: flush_handlers

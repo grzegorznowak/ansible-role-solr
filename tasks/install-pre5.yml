@@ -82,7 +82,7 @@
     mode: 0755
   when: ansible_service_mgr == 'systemd'
   notify:
-    - Ensure solr is started and enabled on boot if configured.
+    - Ensure solr is enabled on boot if configured.
 
 - name: Flush Handlers.
   meta: flush_handlers
